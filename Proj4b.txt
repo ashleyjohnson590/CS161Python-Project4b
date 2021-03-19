@@ -1,0 +1,19 @@
+# Author:Ashley Johnson
+# Date:10/8/2020
+# Description: Program displays the Fibonacci number of the n-th term
+
+def fib(n):
+    """
+    Docstring: This function calculates the fibonacci number of the nth term
+    """
+    prevnum = 0
+    currentnum = 1
+
+    if n <= 1:
+        return n
+
+    for i in range(n-1):
+        newnum = prevnum+currentnum
+        prevnum = currentnum
+        currentnum = newnum
+    return currentnum
